@@ -24,10 +24,10 @@ define([
 		initialize: function () {
 			this.listenTo(this.model, 'change', this.render);
 			this.listenTo(this.model, 'destroy', this.remove);
+			this.$el.html(this.template(this.model.toJSON()));
 		},
 
 		render: function () {
-			this.$el.html(this.template(this.model.toJSON()));
 			this.$('.name').html(this.model.displayName());
 			this.$input = this.$('.edit');
 			return this;
