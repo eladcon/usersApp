@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" data-framework="backbonejs">
+	<head>
+		<meta charset="utf-8">
+		<title>Users App</title>
+		<link rel="stylesheet" href="stylesheets/style.css">
+	</head>
+	<body>
+		<section id="users-app">
+			<header id="header">
+				<h1>Users</h1>
+				<input id="new-user" placeholder="First + Last name" autofocus>
+				<button id="add-user">Add</button>
+			</header>
+			<section id="main">
+				<ul id="users-list"></ul>
+			</section>
+			<footer id="footer">
+				<label id="no-users">No users at the moment</label>
+			</footer>
+		</section>
+		<script data-main="js/main" src="node_modules/requirejs/require.js"></script>
+	</body>
+</html>
