@@ -11,6 +11,7 @@ define([
 
 			var splittedNames = name.split(' ');
 			if (splittedNames.length > 1) {
+				// Get first name and first letter of the last name
 				return splittedNames[0] + " " + splittedNames[1].charAt(0);
 			}
 			else {
