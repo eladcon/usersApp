@@ -1,0 +1,54 @@
+name: enum variant 1
+description: ''
+labels:
+  - '344'
+seed: aaf50ea553029d9a
+stickinessProperty: rox.distinct_id
+platforms:
+  - deploymentConfiguration:
+      targeting:
+        - weight:
+            - option: C
+              value: 0.05
+            - option: B
+              value: 0
+            - option: A
+              value: 0
+          flag:
+            - value: 'true'
+              name: lookback
+          groupLogicGate: or
+          group: []
+          type: flag
+        - weight:
+            - value: 0.5
+              option: C
+            - value: 0
+              option: B
+            - value: 0
+              option: A
+          flag: []
+          groupLogicGate: or
+          group:
+            - All Users
+          type: all
+    flag:
+      name: enumVariant1
+      platform: __ROLLOUT_DEFAULT__
+  - deploymentConfiguration:
+      targeting:
+        - weight:
+            - value: 0.1
+              option: C
+            - value: 0
+              option: B
+            - value: 0
+              option: A
+          flag: []
+          groupLogicGate: or
+          group:
+            - All Users
+          type: all
+    flag:
+      name: enumVariant1
+      platform: Java
