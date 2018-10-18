@@ -1,9 +1,0 @@
-name: Test Devices
-description: All users who are test devices
-jsCondition:
-  operator: eq
-  operands:
-    - true
-    - operator: property
-      operands:
-        - rox.test_device
