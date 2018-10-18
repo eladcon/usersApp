@@ -7,9 +7,9 @@ platforms:
   - deploymentConfiguration:
       targeting:
         - weight:
-            - value: 0
-              option: 'true'
             - value: 1
+              option: 'true'
+            - value: 0
               option: 'false'
           flag: []
           groupLogicGate: or
