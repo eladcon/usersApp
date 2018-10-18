@@ -1,7 +1,0 @@
-name: All Users
-description: All users from all platforms
-jsCondition:
-  operator: eq
-  operands:
-    - true
-    - true
